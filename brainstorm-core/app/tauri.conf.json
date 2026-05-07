@@ -1,0 +1,20 @@
+{
+    "productName": "brainstorm",
+    "version": "0.0.1",
+    "identifier": "com.brainstorm.app",
+    "build": {
+        "beforeDevCommand": "cd ../../brainstorm-ui && bun run start",
+        "beforeBuildCommand": "cd ../../brainstorm-ui && bun run build",
+        "devUrl": "http://localhost:4200",
+        "frontendDist": "../../brainstorm-ui/dist/brainstorm-ui/browser"
+    },
+    "app": {
+        "windows": [{ "title": "Brainstorm", "width": 1400, "height": 900 }],
+        "security": { "csp": null }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": []
+    }
+}
